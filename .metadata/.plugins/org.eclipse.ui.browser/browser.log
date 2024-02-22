@@ -1,0 +1,22 @@
+
+2월 21, 2024 12:31:07.693 NEW SESSION
+2월 21, 2024 12:31:07.693 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+2월 21, 2024 12:34:49.832 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+2월 21, 2024 12:36:45.157 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+2월 21, 2024 12:38:43.790 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+2월 21, 2024 16:14:51.817 [11588:14784:0221/161451.817:ERROR:cert_verify_proc_builtin.cc(766)] CertVerifyProcBuiltin for cookie-sync.api.soundcast.fm failed:
+2월 21, 2024 16:14:51.818 ----- Certificate i=0 (CN=*.api.soundcast.fm) -----
+2월 21, 2024 16:14:51.818 ERROR: Time is after notAfter
+2월 21, 2024 16:14:51.819 
+2월 21, 2024 16:14:51.819 
+
+2월 22, 2024 09:24:34.662 NEW SESSION
+2월 22, 2024 09:24:34.662 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+2월 22, 2024 11:42:53.827 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+2월 22, 2024 12:15:14.440 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+2월 22, 2024 16:21:47.362 [13700:5092:0222/162147.362:ERROR:interface_endpoint_client.cc(702)] Message 5 rejected by interface blink.mojom.WidgetHost
+2월 22, 2024 16:22:13.195 [13700:5092:0222/162213.195:ERROR:interface_endpoint_client.cc(702)] Message 5 rejected by interface blink.mojom.WidgetHost
+2월 22, 2024 16:54:51.271 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+
+2월 22, 2024 17:16:10.993 NEW SESSION
+2월 22, 2024 17:16:10.993 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.

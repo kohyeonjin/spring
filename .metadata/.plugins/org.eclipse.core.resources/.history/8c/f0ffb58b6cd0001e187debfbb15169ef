@@ -1,0 +1,6 @@
+package com.simple.controller;
+
+@Controller
+public class RequestController {
+
+}

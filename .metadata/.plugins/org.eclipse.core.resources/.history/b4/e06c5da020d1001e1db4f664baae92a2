@@ -1,0 +1,28 @@
+package com.simple.controller;
+
+import java.util.Arrays;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+@RequestMapping("/response")
+public class ResponseController {
+	
+	@RequestMapping("/ex01")
+	public String ex01(Model model) {
+		
+		//request.setAttribute(키,값)
+		model.addAttribute("name","홍길동");
+		model.addAttribute("list",Arrays.asList(1,2,3,4));
+		model.addAttribute("age",20);
+		
+		return "response/ex01";
+	}
+	
+	@RequestMapping("/ex02")
+	public String ex02() {
+		return "response/ex02";
+	}
+}

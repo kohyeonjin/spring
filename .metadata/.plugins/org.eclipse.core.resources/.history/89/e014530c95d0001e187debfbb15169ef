@@ -1,0 +1,43 @@
+package com.simple.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+
+@Controller
+@RequestMapping("/request") //상위 요청 request
+public class RequestController {
+	
+//	//ȭ���� ���� ������, ��Ʈ�ѷ� ȭ���� ���� ����
+//	@RequestMapping("/ex01")
+//	public String ex01() {
+////		return "ȭ���ǰ��";
+//		return "request/ex01";
+//	}
+	
+	//화면을 띄우는 요청
+	@RequestMapping(value="/ex01")
+	public void ex01() {
+		
+	}
+		
+	//GET방식만 허용됨 RequestMethod.GET
+	//POST 방식만 허용함. RequestMetgod.POST
+	//안적으면 둘 다 허용됨
+	@RequestMapping(value="/basic",method=RequestMethod.POST) 
+	public void basic() {
+		System.out.println("잘 실행됨");
+	}
+	
+	//ex02화면
+	@RequestMapping("/ex02")
+	public String ex02() {
+		
+		return "request/ex02";
+	}
+	
+	@RequestMapping(value="/param", method=RequestMethod.POST)
+	public String param() {
+		return "";
+	}
+}

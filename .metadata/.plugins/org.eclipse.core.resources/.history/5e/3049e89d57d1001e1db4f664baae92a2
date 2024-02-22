@@ -1,0 +1,32 @@
+package com.simple.dao;
+
+import java.sql.Connection;
+
+import javax.sql.DataSource;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+
+import com.simple.command.ScoreVO;
+
+@Repository("scoreDAO")
+public class ScoreDAOImpl implements ScoreDAO {
+	
+	@Autowired
+	private DataSource dataSource;
+	
+	@Override
+	public void regist(ScoreVO vo) {
+		// TODO Auto-generated method stub
+		
+		//JDBC기본문법으로 insert ->
+		try {
+			Connection conn = dataSource.getConnection();
+			
+			System.out.println(conn);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+}

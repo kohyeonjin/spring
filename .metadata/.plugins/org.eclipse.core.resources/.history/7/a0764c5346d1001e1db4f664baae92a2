@@ -1,0 +1,27 @@
+package com.simple.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+@RequestMapping("/score")
+public class ScoreController {
+	
+	@RequestMapping("/scoreRegist")
+	public String scoreRegist() {
+		
+		return "score/scoreRegist";
+	}
+	
+	@RequestMapping("/scoreResult")
+	public String scoreResult() {
+		
+		return "score/scoreResult";
+	}
+	
+	@RequestMapping("/scoreList")
+	public String scoreList() {
+		
+		return "score/scoreList";
+	}
+}
