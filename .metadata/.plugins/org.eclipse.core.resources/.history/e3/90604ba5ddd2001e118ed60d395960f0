@@ -1,0 +1,41 @@
+package com.simple.controller;
+
+import java.util.ArrayList;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.simple.command.BoardVO;
+import com.simple.service.BoardService;
+
+@Controller
+@RequestMapping("/board")
+public class BoardController {
+	
+	@Autowired
+	private BoardService service;
+	
+	@RequestMapping("/boardRegister")
+	public String boardRegister() {
+		
+		return "board/boardRegister";
+	}
+	
+	@RequestMapping("/boardForm")
+	public String boardForm(BoardVO vo) {
+		
+		service.boardRegist(vo);
+		
+		return "board/boardResult";
+	}
+	
+	
+	@RequestMapping("/boardList")
+	
+	public String boardList() {
+		
+		ArrayList<BoardVO> list = service.getList();
+		return "board/boardList";
+	}
+}

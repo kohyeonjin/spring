@@ -1,0 +1,16 @@
+package com.simple.basic;
+
+import java.util.Map;
+
+import com.simple.command.ScoreVO;
+
+//마이바티스의 xml의 연결되는 인터페이스
+//동일한 이름으로 TestMapper.xml
+public interface TestMapper {
+
+	public String getTime();
+	public int insertOne(String name); //insert
+	public int insertTwo(ScoreVO vo);
+	public int insertFour(Map<String, String> map);
+
+}

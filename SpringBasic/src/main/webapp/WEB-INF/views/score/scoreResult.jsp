@@ -8,5 +8,9 @@
 </head>
 <body>
 	<h3>점수 등록결과</h3>
+	
+	<h3>점수가 성공적으로 등록되었습니다!</h3>
+	<a href="scoreRegist">다시 등록하기</a>
+	<a href="scoreList">목록보기</a>
 </body>
 </html>

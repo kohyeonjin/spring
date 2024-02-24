@@ -1,0 +1,10 @@
+package com.simple.command;
+
+public class BoardVO {
+	
+	private int num;
+	private String writer;
+	private String title;
+	private String content;
+	private String remark;
+}

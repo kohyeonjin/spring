@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+  <!-- 마이바티스 문법을 사용가능, namespace속성=인터페이스 풀경로 -->
+  <mapper namespace="com.simple.basic.TestMapper">
+  
+  <!-- id는 인터페이스에 정의된 메서드명 -->
+  <!-- select문은 resultType으로 반환 받을 타입 -->
+  <select id="getTime" resultType="string">
+  	select sysdate from dual
+  </select>
+  
+  <!-- 파라미터 타입에는 전달되는 매개변수 타입 string, int, map (생략가능) -->
+  <!-- 
+  		파라미터 #(매개변수명) 로 받습니다(단, 하나의 매개변수만 전달가능)
+  		만약 여려개를 주고싶다면, 문법이 있다.
+   -->
+  <insert id="insertOne" parameterType="String">
+  	insert into score(sno,name) values(score_seq.nextval,#{name})
+  </insert>
+  
+  <!-- vo나 map타입인 경우, #{getter명}.#{키} -->
+  <insert id="insertTwo" parameterType="com.simple.command.ScoreVO">
+  	insert into score values(score_seq.nextval,#{name},#{kor}, #{eng}, #{math})
+  </insert>
+  
+  <insert id="insertFour" parameterType="map">
+  insert into score values(score_seq.nextval,#{name},#{kor}, #{eng}, #{math})
+  </insert>
+  
+  <insert id="insertThree">
+  	insert into score(sno,name,kor) values(score_seq.nextval,#{이름},#{국어})
+  </insert>
+  </mapper>

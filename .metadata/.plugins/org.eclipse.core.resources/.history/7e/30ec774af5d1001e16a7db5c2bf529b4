@@ -1,0 +1,13 @@
+package com.simple.basic;
+
+import org.junit.runner.RunWith;
+import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+
+//이 클래스를 Junit4 과 연결해서 스프링 클래스로 동작을 시키려면
+
+@RunWith(SpringJUnit4ClassRunner.class)
+@ContextConfiguration("file:src/main/webapp/WEB-INF/config/root-context.xml") //테스트 할 스프링 빈파일
+public class MyBatisTest {
+
+}

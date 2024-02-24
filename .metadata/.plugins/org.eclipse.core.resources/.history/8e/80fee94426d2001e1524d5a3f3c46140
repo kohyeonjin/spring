@@ -1,0 +1,11 @@
+package com.simple.command;
+
+public class BoardVO {
+	번호,작성자,제목,내용,비고
+	
+	private int num;
+	private String writer;
+	private String title;
+	private String content;
+	private String remark;
+}
